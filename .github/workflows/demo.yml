@@ -30,6 +30,8 @@ jobs:
         with: 
           name: dist-files
           path: dist
+      - name: output-contents
+        run: ls
 
   deploy:
     needs: build
